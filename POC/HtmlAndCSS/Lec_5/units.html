@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Units</title>
+    <style>
+        html{
+            font-size:30px;
+        }
+        .parent{
+            font-size: 35px;
+            /* 1em =35px */
+        }
+        .box{
+            background-color: aquamarine;
+            margin: 10px;
+        }
+        .px{
+            width: 200px;
+        }
+        .vw{
+            width:30vw;
+
+        }
+        .em{
+            width:10em;
+            /*1 em = parent font size*/
+            /*if parent font size is 30 px then width is 10 * 35 = 30px*/
+        }
+        .rem{
+            width:10rem;
+            /*1 rem = font size of root element : html : by default it is 16 px*/
+            /* 160px will be width */
+        /*    rem by default 16 which means 10 * 16 = 160*/
+        }
+        /*rem, em == multiply*/
+        /*vh,vw = %*/
+    </style>
+</head>
+<body>
+<!--rem : root element font size | by default : 16-->
+<!--em : parent element size | derive from parent element-->
+<div class="main">
+    <div class=" box px">i am 200px wide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, deleniti. Amet modi consectetur aut iure, nobis officia iste accusamus odio fugit commodi consequuntur aperiam soluta! Quaerat vitae iste doloribus dolore?</div>
+    <div class="box vw">I am 10vw wide</div>
+    <div class="parent">
+        <div class="box em ">i am 10em wide </div>
+
+    </div>
+    <div class="box rem">I am 10rem wide</div>
+</div>
+
+</body>
+</html>
