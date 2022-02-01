@@ -25,7 +25,7 @@
         .em{
             width:10em;
             /*1 em = parent font size*/
-            /*if parent font size is 30 px then width is 10 * 35 = 30px*/
+            /*if parent font size is 30 px then width is 10 * 35 = 350px*/
         }
         .rem{
             width:10rem;
@@ -35,6 +35,13 @@
         }
         /*rem, em == multiply*/
         /*vh,vw = %*/
+        .ems li{
+            font-size: 1.5em;
+        }
+        .rems li{
+            font-size: 1.5rem;
+            /* 1.5*16px=24px */
+        }
     </style>
 </head>
 <body>
@@ -50,5 +57,39 @@
     <div class="box rem">I am 10rem wide</div>
 </div>
 
+<!--dif between em and rem-->
+<!-- difference b/w rem and em -->
+<ul class="rems">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three
+        <ul>
+            <li>Three a</li>
+            <li>Three b
+                <ul>
+                    <li>Three b a</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<ul class="ems">
+    <!-- 1.5*16=24px -->
+    <li>One</li>
+    <li>Two</li>
+    <li>Three
+        <!-- 1.5*16=24px *1.5=36px -->
+        <ul>
+            <li>Three a</li>
+            <li>Three b
+                <!-- 1.5*16=24px *1.5=36px*1.5=54px -->
+                <ul>
+                    <li>Three b a</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
 </body>
 </html>
