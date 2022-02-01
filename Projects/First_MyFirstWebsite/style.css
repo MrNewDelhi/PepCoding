@@ -1,15 +1,35 @@
+h1{
+    margin-left: 2rem;
+}
 li{
     list-style: none;
+    margin-left: 2rem;
 }
-
-.welcomeImage{
-    height: 800px;
-    width: 1200px;
+.navbar>nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+}
+img[src="Images/lap.jpeg"]{
+    height:100vh;
+    width: 95vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.skills{
+    display: flex;
+}
+.skills>div{
+    text-align: center;
+    margin-top: 1rem;
 }
 .footer{
     height: 80px;
     background-color:black;
     color:white;
+    text-align: center;
 }
 .footer>p{
     font-size:25px;
