@@ -1,5 +1,6 @@
 h1{
     margin-left: 2rem;
+
 }
 li{
     list-style: none;
@@ -26,7 +27,6 @@ img[src="Images/lap.jpeg"]{
     margin-top: 1rem;
 }
 .footer{
-    height: 80px;
     background-color:black;
     color:white;
     text-align: center;
